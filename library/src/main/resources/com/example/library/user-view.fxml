@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controller.UserController">
+    <children>
+        <VBox prefHeight="600.0" prefWidth="600.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="600.0">
+                    <children>
+                        <Pane prefHeight="100.0" prefWidth="300.0">
+                            <children>
+                                <Text fx:id="nameTxt" fill="#f2f2f2" layoutX="32.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="104.126953125">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="100.0" prefWidth="350.0">
+                            <children>
+                                <Text fx:id="nationalNum" fill="#f2f2f2" layoutX="32.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="104.126953125">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </Pane>
+                    </children>
+                </HBox>
+                <ScrollPane prefHeight="500.0" prefWidth="600.0" style="-fx-background: #383838;">
+                    <content>
+                        <GridPane fx:id="cardHolder" prefWidth="580.0">
+
+                        </GridPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </VBox>
+    </children>
+</Pane>

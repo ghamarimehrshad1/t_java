@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #383838;" vgap="25" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controller.AddBookController">
+    <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+
+    <Text fill="#f2f2f2" text="Add Book" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <font>
+            <Font size="22.0" />
+        </font></Text>
+
+    <Label text="Name:" textFill="#f2f2f2" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+    <TextField fx:id="nameField" style="-fx-focus-color:#CDBE78" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Author" textFill="#f2f2f2" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+    <TextField fx:id="authorField" style="-fx-focus-color:#CDBE78" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="Publication Name" textFill="#f2f2f2" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+    <TextField fx:id="publicationNameField" style="-fx-focus-color:#CDBE78" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Label text="Circulation" textFill="#f2f2f2" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+
+    <TextField fx:id="circulationField" style="-fx-focus-color:#CDBE78" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <Label text="Publishing Name" textFill="#f2f2f2" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+
+    <TextField fx:id="publicationTurnField" style="-fx-focus-color:#CDBE78" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+    <Label text="Price" textFill="#f2f2f2" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+
+    <TextField fx:id="priceField" style="-fx-focus-color:#CDBE78" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+    <Text fx:id="error" fill="#FF6363" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+
+    <HBox alignment="BOTTOM_CENTER" prefHeight="38.0" prefWidth="310.0" spacing="10" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="8">
+        <Button onAction="#addBook" prefHeight="39.0" prefWidth="89.0" style="-fx-focus-color:#CDBE78;-fx-background-color: #066163; -fx-background-radius: 6px; -fx-border-radius: 6px;" text="Add" textFill="#f2f2f2" />
+    </HBox>
+
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+
+</GridPane>

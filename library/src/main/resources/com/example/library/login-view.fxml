@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: #383838;" vgap="25" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controller.LoginController">
+    <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+    <Text fill="#f2f2f2" text="Login" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <font>
+            <Font size="22.0" />
+        </font>
+    </Text>
+
+    <Label text="Username:" textFill="#f2f2f2" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+    <TextField fx:id="usernameField" style="-fx-focus-color:#CDBE78" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Password:" textFill="#f2f2f2" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+    <PasswordField fx:id="passwordField" style="-fx-focus-color:#CDBE78" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Text fx:id="error" fill="#FF6363" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+
+    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button fx:id="login" onAction="#login" style="-fx-background-color: #066163; -fx-background-radius: 6px; -fx-border-radius: 6px;" text="Login" textFill="#f2f2f2" />
+    </HBox>
+
+    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Button onAction="#goToRegister" style="-fx-background-color: #066163; -fx-background-radius: 6px; -fx-border-radius: 6px;" text="Go to register page" textFill="#f2f2f2" />
+    </HBox>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

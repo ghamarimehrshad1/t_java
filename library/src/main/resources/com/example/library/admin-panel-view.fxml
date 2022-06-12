@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane fx:controller="com.example.library.controller.AdminPanelController" style="-fx-background-color: #383838;" dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <AnchorPane maxWidth="193" minHeight="0.0" minWidth="193" prefHeight="600.0" prefWidth="193.0">
+            <children>
+                <VBox layoutX="3.0" layoutY="120.0" prefHeight="345.0" prefWidth="178.0">
+                    <children>
+                        <ButtonBar prefHeight="51.0" prefWidth="178.0">
+                            <buttons>
+                                <Button onAction="#handleShowView" userData="admin"
+                                        mnemonicParsing="false" prefHeight="41.0" prefWidth="168.0"
+                                        style="-fx-background-color: #066163; -fx-background-radius: 6px; -fx-border-radius: 6px;"
+                                        textFill="#f2f2f2"
+                                        text="Profile"/>
+                            </buttons>
+                        </ButtonBar>
+                        <ButtonBar prefHeight="51.0" prefWidth="178.0">
+                            <buttons>
+                                <Button onAction="#handleShowView" userData="add-user"
+                                        mnemonicParsing="false" prefHeight="41.0" prefWidth="168.0"
+                                        text="Add User"
+                                        style="-fx-background-color: #066163; -fx-background-radius: 6px; -fx-border-radius: 6px;"
+                                        textFill="#f2f2f2"/>
+                            </buttons>
+                        </ButtonBar>
+                        <ButtonBar prefHeight="51.0" prefWidth="170.0">
+                            <buttons>
+                                <Button onAction="#handleShowView" userData="add-book"
+                                        mnemonicParsing="false" prefHeight="41.0" prefWidth="168.0"
+                                        text="Add Book"
+                                        style="-fx-background-color: #066163; -fx-background-radius: 6px; -fx-border-radius: 6px;"
+                                        textFill="#f2f2f2"/>
+                            </buttons>
+                        </ButtonBar>
+                        <ButtonBar prefHeight="51.0" prefWidth="170.0">
+                            <buttons>
+                                <Button onAction="#handleShowView" userData="books"
+                                        mnemonicParsing="false" prefHeight="41.0" prefWidth="168.0"
+                                        text="Books"
+                                        style="-fx-background-color: #066163; -fx-background-radius: 6px; -fx-border-radius: 6px;"
+                                        textFill="#f2f2f2"/>
+                            </buttons>
+                        </ButtonBar>
+                        <ButtonBar prefHeight="51.0" prefWidth="170.0">
+                            <buttons>
+                                <Button onAction="#handleShowView" userData="users"
+                                        mnemonicParsing="false" prefHeight="41.0" prefWidth="168.0"
+                                        text="Users"
+                                        style="-fx-background-color: #066163; -fx-background-radius: 6px; -fx-border-radius: 6px;"
+                                        textFill="#f2f2f2"/>
+                            </buttons>
+                        </ButtonBar>
+                        <ButtonBar prefHeight="51.0" prefWidth="170.0">
+                            <buttons>
+                                <Button onAction="#signOut"
+                                        mnemonicParsing="false" prefHeight="41.0" prefWidth="168.0"
+                                        text="Sign Out"
+                                        style="-fx-background-color: #066163; -fx-background-radius: 6px; -fx-border-radius: 6px;"
+                                        textFill="#f2f2f2"/>
+                            </buttons>
+                        </ButtonBar>
+                    </children>
+                </VBox>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+            <Pane fx:id="content" />
+        </AnchorPane>
+    </items>
+</SplitPane>
